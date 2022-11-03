@@ -7,7 +7,7 @@ import java.time.Duration;
 
 public class BrowserRule extends ExternalResource {
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     public WebDriver getDriver() {
         return driver;
@@ -16,7 +16,7 @@ public class BrowserRule extends ExternalResource {
     @Override
     protected void before() throws Throwable {
 
-        //System.setProperty("webdriver.chrome.driver", "/Users/ramazanov/Projects/local-browser-drivers/chromedriver");
+        System.setProperty("chromedriver.exe", "C:\\WebDriver\bin");
         //System.setProperty("webdriver.gecko.driver", "/Users/ramazanov/Projects/local-browser-drivers/geckodriver");
 
 

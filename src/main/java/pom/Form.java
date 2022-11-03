@@ -1,4 +1,5 @@
 package pom;
+import main.BrowserRule;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -10,7 +11,8 @@ import static org.openqa.selenium.By.xpath;
 
 public class Form {
 
-    private final WebDriver driver;
+    //private final WebDriver driver;
+    private BrowserRule browserRule = new BrowserRule();
     private final static String page = "https://qa-scooter.praktikum-services.ru/";
     private final By nameText = xpath("//div[@class='Order_Form__17u6u']/div[1]/input"); //Имя.
     private final By secondNameText = xpath("//div[@class='Order_Form__17u6u']/div[2]/input"); //Фамилия
@@ -31,66 +33,66 @@ public class Form {
     String date = LocalDate.now().plusMonths(1).format(formatter); // Добавить месяц к текущей дате
 
     public Form(WebDriver driver) {
-        this.driver = driver;
+        this.browserRule.driver = driver;
     }
 
     public void startPage() {
-        driver.get(page);
+        browserRule.driver.get(page);
     }
     public void findCheckAndClickOrderButton(By buttonAddress) {
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(buttonAddress));
-        Object elementOrderButton = driver.findElement(buttonAddress);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", elementOrderButton);
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.elementToBeClickable(buttonAddress));
-        driver.findElement(buttonAddress).click();
+        new WebDriverWait(browserRule.driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(buttonAddress));
+        Object elementOrderButton = browserRule.driver.findElement(buttonAddress);
+        ((JavascriptExecutor) browserRule.driver).executeScript("arguments[0].scrollIntoView();", elementOrderButton);
+        new WebDriverWait(browserRule.driver, Duration.ofSeconds(5)).until(ExpectedConditions.elementToBeClickable(buttonAddress));
+        browserRule.driver.findElement(buttonAddress).click();
     }
     public void userName(String name){
-        driver.findElement(nameText).sendKeys(name);
+        browserRule.driver.findElement(nameText).sendKeys(name);
     }
     public void userSurname(String surname) {
-        driver.findElement(secondNameText).sendKeys(surname);
+        browserRule.driver.findElement(secondNameText).sendKeys(surname);
     }
     public void userAddress(String address) {
-        driver.findElement(inputAddress).sendKeys(address);
+        browserRule.driver.findElement(inputAddress).sendKeys(address);
     }
     public void userPhone(String phone) {
-        driver.findElement(userPhone).sendKeys(phone);
+        browserRule.driver.findElement(userPhone).sendKeys(phone);
     }
     public void metroStation() {
-        driver.findElement(metroStation).click();
+        browserRule.driver.findElement(metroStation).click();
     }
     public void metroStationChoice() {
-        driver.findElement(metroStationChoice).click();
+        browserRule.driver.findElement(metroStationChoice).click();
     }
     public void nextPageButton() {
-        driver.findElement(nextPageButton).click();
+        browserRule.driver.findElement(nextPageButton).click();
     }
     public void calendarDate() {
-        driver.findElement(calendarDate).click();
-        driver.findElement(calendarDate).sendKeys(date);
-        driver.findElement(calendarDate).sendKeys(Keys.ENTER);
+        browserRule.driver.findElement(calendarDate).click();
+        browserRule.driver.findElement(calendarDate).sendKeys(date);
+        browserRule.driver.findElement(calendarDate).sendKeys(Keys.ENTER);
     }
     public void rentalDuration() {
-        driver.findElement(rentTime).click();
-        driver.findElement(rentalDurationChoice).click();
+        browserRule.driver.findElement(rentTime).click();
+        browserRule.driver.findElement(rentalDurationChoice).click();
     }
     public void scooterColour() {
-        driver.findElement(scooterColour).click();
+        browserRule.driver.findElement(scooterColour).click();
     }
     public void userComment(String comment) {
-        driver.findElement(userComment).sendKeys(comment);
+        browserRule.driver.findElement(userComment).sendKeys(comment);
     }
     public void orderButton() {
-        driver.findElement(orderButton).click();
+        browserRule.driver.findElement(orderButton).click();
     }
     public void confirmButton() {
-        driver.findElement(confirmButton).click();
+        browserRule.driver.findElement(confirmButton).click();
     }
 
 
     public boolean CreatedOrder() {
         try {
-            return driver.findElement(orderCreated).isDisplayed();
+            return browserRule.driver.findElement(orderCreated).isDisplayed();
         } catch (NoSuchElementException e) {
             return false;
         }

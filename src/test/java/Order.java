@@ -18,7 +18,7 @@ public class Order {
     @Rule
     public BrowserRule browserRule = new BrowserRule();
 
-    WebDriver driver = new ChromeDriver();
+    //WebDriver driver = new ChromeDriver();
 
     final By buttonAddress;
     final String name;
@@ -47,8 +47,8 @@ public class Order {
 
     @Test
     public void checkOrderFromHeader_success() {
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        Form FormPage = new Form(driver);
+        browserRule.driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Form FormPage = new Form(browserRule.driver);
         FormPage.startPage();
         FormPage.findCheckAndClickOrderButton(buttonAddress);
         FormPage.userName(name);
@@ -69,6 +69,6 @@ public class Order {
 
     @After
     public void closedBrowser() {
-        driver.quit();
+        browserRule.driver.quit();
     }
 }

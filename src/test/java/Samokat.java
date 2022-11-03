@@ -14,7 +14,7 @@ public class Samokat {
     @Rule
     public BrowserRule browserRule = new BrowserRule();
 
-    WebDriver driver = new ChromeDriver();
+    //WebDriver driver = new ChromeDriver();
     private final String testText0 = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
     private final String testText1 = "Пока что у нас так: один заказ — один самокат. " +
             "Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.";
@@ -30,52 +30,52 @@ public class Samokat {
     
     @Before
     public void openBrowserAndScroll() {
-        driver.get("https://qa-scooter.praktikum-services.ru/");
-        Object elementQuestions = driver.findElement(By.xpath("//div[@class='Home_FourPart__1uthg']/div[1]"));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView();", elementQuestions);
+        browserRule.driver.get("https://qa-scooter.praktikum-services.ru/");
+        Object elementQuestions = browserRule.driver.findElement(By.xpath("//div[@class='Home_FourPart__1uthg']/div[1]"));
+        ((JavascriptExecutor) browserRule.driver).executeScript("arguments[0].scrollIntoView();", elementQuestions);
     }
     @Test
     public void checkHowMuch()  {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage(browserRule.driver);
         assertEquals("Текст 0 не найден!",testText0, mainPage.howMuchClick());
     }
     @Test
     public void checkSeveralScooterClick()  {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage(browserRule.driver);
         assertEquals("Текст 1 не найден!", testText1, mainPage.severalScooterClick());
     }
     @Test
     public void checkRentalTimeClick()  {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage(browserRule.driver);
         assertEquals("Текст 2 не найден!", testText2, mainPage.rentalTimeClick());
     }
     @Test
     public void checkOrderTodayClick() {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage(browserRule.driver);
         assertEquals("Текст 3 не найден!", testText3, mainPage.orderTodayClick());
     }
     @Test
     public void checkExtendOrderClick()  {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage(browserRule.driver);
         assertEquals("Текст 4 не найден!", testText4, mainPage.extendOrderClick());
     }
     @Test
     public void checkBringChargerClick()  {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage(browserRule.driver);
         assertEquals("Текст 5 не найден!", testText5, mainPage.bringChargerClick());
     }
     @Test
     public void checkCancelOrderClick()  {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage(browserRule.driver);
         assertEquals("Текст 6 не найден!", testText6, mainPage.cancelOrderClick());
     }
     @Test
     public void checkLiveMKADClick()  {
-        MainPage mainPage = new MainPage(driver);
+        MainPage mainPage = new MainPage(browserRule.driver);
         assertEquals("Текст 7 не найден!", testText7, mainPage.liveMKADClick());
     }
     @After
     public void closedBrowser() {
-        driver.quit();
+        browserRule.driver.quit();
     }
 }
