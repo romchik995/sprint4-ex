@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c55ece44-9e3c-442d-8614-852263424784" name="Changes" comment="add new proj">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/BrowserRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BrowserRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/Form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pom/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/Steps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Samokat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Samokat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/BrowserRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pom/Form.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pom/MainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/steps/Steps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Samokat.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop1" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Gz5AqcxzzWZSK3PiOo10LfdCOf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.Samokat">
+    <configuration name="Order" type="JUnit" factoryName="JUnit">
+      <module name="sprint4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Order" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Samokat" type="JUnit" factoryName="JUnit">
+      <module name="sprint4" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Samokat" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.Order" />
+      <item itemvalue="JUnit.Samokat" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c55ece44-9e3c-442d-8614-852263424784" name="Changes" comment="" />
+      <created>1667378435365</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667378435365</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add new proj">
+      <created>1667378899214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667378899214</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add new proj">
+      <created>1667379325567</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667379325567</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add new proj" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new proj" />
+  </component>
+</project>
