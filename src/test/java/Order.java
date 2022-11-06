@@ -5,8 +5,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import static org.junit.Assert.assertTrue;
 import static org.openqa.selenium.By.cssSelector;
 import pom.Form;
@@ -17,8 +15,6 @@ public class Order {
 
     @Rule
     public BrowserRule browserRule = new BrowserRule();
-
-    //WebDriver driver = new ChromeDriver();
 
     final By buttonAddress;
     final String name;
@@ -64,7 +60,7 @@ public class Order {
         FormPage.userComment(comment);
         FormPage.orderButton();
         FormPage.confirmButton();
-        assertTrue("ERROR", FormPage.CreatedOrder());
+        assertTrue("ERROR", FormPage.createdOrder());
     }
 
     @After

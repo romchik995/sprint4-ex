@@ -9,16 +9,10 @@ public class BrowserRule extends ExternalResource {
 
     public WebDriver driver;
 
-    public WebDriver getDriver() {
-        return driver;
-    }
-
     @Override
     protected void before() throws Throwable {
 
         System.setProperty("chromedriver.exe", "C:\\WebDriver\bin");
-        //System.setProperty("webdriver.gecko.driver", "/Users/ramazanov/Projects/local-browser-drivers/geckodriver");
-
 
         String browser = System.getenv("browser");
 
@@ -28,7 +22,7 @@ public class BrowserRule extends ExternalResource {
             driver = new ChromeDriver();
         }
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     @Override

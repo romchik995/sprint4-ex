@@ -5,13 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c55ece44-9e3c-442d-8614-852263424784" name="Changes" comment="add new proj">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/BrowserRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BrowserRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Utils.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pom/Form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/Form.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pom/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/steps/Steps.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Samokat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Samokat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Samokat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Samokat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/BrowserRule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/main/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pom/Form.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pom/MainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/steps/Steps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Samokat.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +56,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Order">
+  <component name="RunManager" selected="JUnit.Samokat">
     <configuration name="Order" type="JUnit" factoryName="JUnit">
       <module name="sprint4" />
       <option name="PACKAGE_NAME" value="" />
@@ -111,21 +122,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add new proj" />
     <option name="LAST_COMMIT_MESSAGE" value="add new proj" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Samokat.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Samokat.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

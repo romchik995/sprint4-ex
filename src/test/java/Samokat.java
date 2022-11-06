@@ -5,28 +5,24 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
 import static org.junit.Assert.assertEquals;
 
 public class Samokat {
     @Rule
     public BrowserRule browserRule = new BrowserRule();
-
-    //WebDriver driver = new ChromeDriver();
-    private final String testText0 = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
-    private final String testText1 = "Пока что у нас так: один заказ — один самокат. " +
+    private static String testText0 = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
+    private static String testText1 = "Пока что у нас так: один заказ — один самокат. " +
             "Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.";
-    private final String testText2 = "Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня." +
+    private String testText2 = "Допустим, вы оформляете заказ на 8 мая. Мы привозим самокат 8 мая в течение дня." +
             " Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру." +
             " Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.";
-    private final String testText3 = "Только начиная с завтрашнего дня. Но скоро станем расторопнее.";
-    private final String testText4 = "Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.";
-    private final String testText5 = "Самокат приезжает к вам с полной зарядкой. " +
+    private String testText3 = "Только начиная с завтрашнего дня. Но скоро станем расторопнее.";
+    private String testText4 = "Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.";
+    private String testText5 = "Самокат приезжает к вам с полной зарядкой. " +
             "Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.";
-    private final String testText6 = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
-    private final String testText7 = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
+    private String testText6 = "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.";
+    private String testText7 = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
     
     @Before
     public void openBrowserAndScroll() {
@@ -37,7 +33,7 @@ public class Samokat {
     @Test
     public void checkHowMuch()  {
         MainPage mainPage = new MainPage(browserRule.driver);
-        assertEquals("Текст 0 не найден!",testText0, mainPage.howMuchClick());
+        assertEquals("Текст 0 не найден!", testText0, mainPage.howMuchClick());
     }
     @Test
     public void checkSeveralScooterClick()  {

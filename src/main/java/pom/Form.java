@@ -10,8 +10,6 @@ import static org.openqa.selenium.By.cssSelector;
 import static org.openqa.selenium.By.xpath;
 
 public class Form {
-
-    //private final WebDriver driver;
     private BrowserRule browserRule = new BrowserRule();
     private final static String page = "https://qa-scooter.praktikum-services.ru/";
     private final By nameText = xpath("//div[@class='Order_Form__17u6u']/div[1]/input"); //Имя.
@@ -90,7 +88,7 @@ public class Form {
     }
 
 
-    public boolean CreatedOrder() {
+    public boolean createdOrder() {
         try {
             return browserRule.driver.findElement(orderCreated).isDisplayed();
         } catch (NoSuchElementException e) {

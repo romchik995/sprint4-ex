@@ -1,14 +1,11 @@
 package pom;
 import static org.openqa.selenium.By.id;
-
 import main.BrowserRule;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import java.util.concurrent.TimeUnit;
 
 public class MainPage  {
-    //private WebDriver driver;
-
     private BrowserRule browserRule = new BrowserRule();
     public  MainPage(WebDriver driver) {this.browserRule.driver = driver;}
     private final By howMuch = id("accordion__panel-0"); //Сколько это стоит? И как оплатить?
